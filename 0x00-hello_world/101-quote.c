@@ -6,8 +6,6 @@
 */
 int main(void)
 {
-(sort 'and that piece of art is useful" - Dora Korpar, 2015-10-19\n' > file1;)
-file1 *stderr;
-cat file1;
+(gcc 'and that piece of art is useful" - Dora Korpar, 2015-10-19\n';)
 return (1);
 }
