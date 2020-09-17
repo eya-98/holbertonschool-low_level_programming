@@ -3,7 +3,7 @@
 #include <stdio.h>
 /**
 * main - main function
-* description: randon and last digit 
+* description: random and last digit
 * Return: Always 0
 */
 int main(void)
