@@ -2,11 +2,9 @@
 #include <time.h>
 #include <stdio.h>
 /**
-*main - prints whether a number is positive or negative
+* main - main function
 *
-*Description: prints a message whether the number is positive or negative
-*
-*Return: returns 0
+* Return: Always 0
 */
 int main(void)
 {
@@ -16,15 +14,15 @@ n = rand() - RAND_MAX / 2;
 a = n % 10;
 if (a > 5)
 {
-printf("Last digit of %d is %f and is greater than 5 /n", n, a);
+printf("Last digit of %d is %i and is greater than 5\n", n, a);
 }
 else if (a == 0)
 {
-printf("Last digit of %d is %f and is greater than 5 /n", n, a);
+printf("Last digit of %d is %i and is 0\n", n, a);
 }
 else
 {
-printf("Last digit of %d is %f and is less than 5 and not a 0 /n", n, a);
+printf("Last digit of %d is %i and is less than 6 and not 0\n", n, a);
 }
 return (0);
 }
