@@ -7,11 +7,8 @@
 int main(void)
 {
 char letter;
-for (letter = 'a'; letter < 'e'; letter++)
-putchar(letter);
-for (letter = 'f'; letter < 'q'; letter++)
-putchar(letter);
-for (letter = 'r'; letter < 'z'; letter++)
+for (letter = 'a'; letter < 'z'; letter++)
+if (letter != 'e', letter != 'q')
 putchar(letter);
 putchar ('\n');
 return (0);
