@@ -24,7 +24,7 @@ printf("Last digit of %d is %f and is greater than 5 /n", n, a);
 }
 else
 {
-printf("Last digit of %d is %f and is less than 5 /n", n, a);
+printf("Last digit of %d is %f and is less than 5 and not a 0 /n", n, a);
 }
 return (0);
 }
