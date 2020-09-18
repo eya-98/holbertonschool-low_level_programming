@@ -19,7 +19,7 @@ for (m = j + 1; m <= '9'; m++)
 putchar(d);
 putchar(j);
 putchar(m);
-if (d != '8')
+if (d != '7')
 {
 putchar(',');
 putchar(' ');
