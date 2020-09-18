@@ -2,7 +2,7 @@
 /**
  * main - main function
  *
- * Description: prints numbers from 00 to 99
+ * Description: prints numbers from 01 to 89
  *
  * Return: 0
  *
@@ -11,13 +11,13 @@ int main(void)
 {
 int d;
 int j;
-for (d = 0 ; d <= 5 ; d++)
+for (d = 0 ; d <= 9; d++)
 {
-for (j = d + 1; j < 58; j++)
+for (j = d + 1; j < 9; j++)
 {
 putchar(d);
 putchar(j);
-if (d != 56)
+if (d != 8)
 {
 putchar(',');
 putchar(' ');
