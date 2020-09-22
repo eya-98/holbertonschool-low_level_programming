@@ -6,7 +6,8 @@
  * Return: Always n
  */
 int print_last_digit(int r)
-{int c;
+{
+int c;
 if (r >= 0)
 {
 r = r % 10;
