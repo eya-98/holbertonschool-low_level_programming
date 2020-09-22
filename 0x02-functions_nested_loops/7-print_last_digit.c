@@ -7,7 +7,7 @@
  */
 int print_last_digit(int r)
 {
-int c;
+char c;
 if (r >= 0)
 {
 r = r % 10;
