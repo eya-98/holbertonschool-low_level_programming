@@ -7,20 +7,17 @@
  */
 int print_last_digit(int r)
 {
-char c;
+int c;
 if (r >= 0)
 {
-r = r % 10;
-c = '0' + r;
-_putchar (c);
-return (r);
+c = r % 10;
+_putchar ('0' + c);
+return (c);
 }
 else
 {
-r = 0 - r;
-r = r % 10;
-c = '0' + r;
-_putchar (c);
-return (r);
+c = ((r % 10) * -1);
+_putchar ('0' + c);
+return (c);
 }
 }
