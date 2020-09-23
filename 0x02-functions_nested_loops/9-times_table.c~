@@ -1,0 +1,42 @@
+#include "holberton.h"
+/**
+ * times_table - time table
+ *
+ * Return: Always 0.
+ */
+void times_table(void)
+{
+int i, j, k, a, b;
+for (i = 0; i <= 9; i++)
+{
+for (j = 0; j <= 9; j++)
+{
+k = i * j;
+a = k % 10;
+b = k / 10;
+if (k <= 9 && k > 0)
+{
+_putchar(',');
+_putchar(' ');
+_putchar(' ');
+_putchar ('0' + a);
+
+if (k == 0)
+{ 
+_putchar(',');
+_putchar(' ');
+_putchar(' ');
+_putchar('0');
+}
+}
+else if (k > 9)
+{
+_putchar(',');
+_putchar(' ');
+_putchar ('0' + b);
+_putchar ('0' + a);
+}
+}    
+_putchar('\n');
+}
+}
