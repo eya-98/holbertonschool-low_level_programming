@@ -1,4 +1,4 @@
-B#include "holberton.h"
+#include "holberton.h"
 /**
  * _isdigit - check the code for Holberton School students.
  *@c : integer
