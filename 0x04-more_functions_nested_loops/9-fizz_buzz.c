@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
- *main  - check the code for Holberton School students.
- *
+ * main - check the code for Holberton School students.
+ * 
  * Return: Always 0.
  */
 int main(void)
@@ -13,7 +13,7 @@ k = i % 3;
 j = i % 5;
 l = i % 15;
 if (l == 0)
-printf("FiizBuzz ");
+printf("FizzBuzz ");
 else if (k == 0)
 printf("Fizz ");
 else if (i == 100)
