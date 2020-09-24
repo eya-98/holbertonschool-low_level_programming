@@ -12,7 +12,7 @@ for (j = 1 ; j <= 10 ; j++)
 i = 0;
 while (i <= 14)
 {
-if (i > 10)
+if (i >= 10)
 {
 _putchar('0' + i / 10);
 _putchar('0' + i % 10);
