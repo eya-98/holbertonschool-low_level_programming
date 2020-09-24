@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * void print_line - check the code for Holberton School students.
+ * print_line - check the code for Holberton School students.
  * @n : integer
  * Return: Always 0.
  */
