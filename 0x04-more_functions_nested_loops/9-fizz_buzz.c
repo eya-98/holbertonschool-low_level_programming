@@ -1,13 +1,13 @@
 #include <stdio.h>
 /**
  * main - check the code for Holberton School students.
- * 
+ *
  * Return: Always 0.
  */
 int main(void)
 {
 int i, j, k, l;
-for (i = 1 ; i <= 100 ; i++)
+for (i = 1; i <= 100; i++)
 {
 k = i % 3;
 j = i % 5;
