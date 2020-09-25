@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - check the code for Holberton School students.
+ * main - printf differents statements
  *
  * Return: Always 0.
  */
@@ -19,7 +19,7 @@ printf("Fizz ");
 else if (i == 100)
 printf("Buzz\n");
 else if (j == 0)
-printf("buzz ");
+printf("Buzz ");
 else
 printf("%d ", i);
 }
