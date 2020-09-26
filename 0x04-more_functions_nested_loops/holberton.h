@@ -1,5 +1,6 @@
 #ifndef Holberton_H
 #define Holberton_H
+void print_triangle(int size);
 void print_line(int n);
 int _isupper(int c);
 int _isdigit(int c);
