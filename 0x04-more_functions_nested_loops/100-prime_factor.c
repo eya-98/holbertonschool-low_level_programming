@@ -6,21 +6,21 @@
  */
 int main(void)
 {
-unsigned long int n;
+long int n;
 int i, max, j;
 n = 612852475143;
-for (i = 2; n; i++)
+for (i = 2; i < n; i++)
 {
 while ((n % i) == 0)
 {
 n = n / i;
 max = 1;
-for (j = 2; i / 2; i++)
+for (j = 2; j <= i / 2; j++)
 if (i % j == 0)
 max = 0;
 }
 }
 if (max == 1)
-printf("%d\n", max);
+printf("%d\n", i);
 return (0);
 }
