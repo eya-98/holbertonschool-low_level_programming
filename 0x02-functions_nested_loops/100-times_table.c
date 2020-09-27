@@ -8,11 +8,7 @@
 void print_times_table(int n)
 {
 int i, j, l;
-if ((n < 0) || (n > 15))
-{
-_putchar('\n');
-}
-else
+if ((n > 0) && (n < 15))
 {
 for (i = 0; i <= n ; i++)
 {
