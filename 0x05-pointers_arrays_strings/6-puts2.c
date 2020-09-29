@@ -2,7 +2,7 @@
 
 /**
  * puts2 - check the code for Holberton School students.
- *
+ * @str : string
  * Return: Always 0.
  */
 void puts2(char *str)
