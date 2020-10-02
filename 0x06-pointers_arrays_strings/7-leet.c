@@ -1,4 +1,5 @@
 #include "holberton.h"
+#include <stdio.h>
 /**
 * *leet - check the code for Holberton School students.
 * @a : char
@@ -27,11 +28,17 @@ m[6] = '7';
 m[7] = '7';
 s[8] = 'l';
 s[9] = 'L';
+m[8] = '1';
+m[9] = '1';
 for (i = 0; a[i] != '\0'; i++)
+{
 for (k = 0; s[k] != '\0'; k++)
+{
 if (a[i] == s[k])
 {
 a[i] = m[k];
+}
+}
 }
 return (a);
 }
