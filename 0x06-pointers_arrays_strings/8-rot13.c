@@ -24,6 +24,7 @@ for (k = 0; k < 52; k++)
 if (a[i] == prem[k])
 {
 a[i] = seco[k];
+ break;
 }
 }
 }
