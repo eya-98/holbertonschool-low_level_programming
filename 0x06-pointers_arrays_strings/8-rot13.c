@@ -18,10 +18,12 @@ for (k = 0; k <= 13; k++)
 if (a[i] == maj_prem[k] || a[i] == min_p[k])
 {
 a[i] = a[i] + 13;
+break;
 }
 else if (a[i] == maj_seco[k] || a[i] == min[k])
 {
 a[i] = a[i] - 13;
+break;
 }
 }
 }
