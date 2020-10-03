@@ -7,27 +7,25 @@
  */
 void print_times_table(int n)
 {
-int i, j, l;
+int i, j;
 if ((n >= 0) && (n <= 15))
 {
 for (i = 0; i <= n ; i++)
 {
-for (j = 0; j <= n; j++)
+for (j = 0; j < n; j++)
 {
-l = i * j;
-if (j != 0)
+if (i * j < 10)
+printf("%d,   ", i * j);
+else if (i * j < 100)
+printf("%d,  ", i * j);
+else 
+printf("%d, ", i * j);
+}
+while (j == n)
 {
-if (l < 10)
-printf(",   %d", l);
-else if (l < 100)
-printf(",  %d", l);
-else
-printf(", %d", l);
+printf("%d\n", i * j);
+j++;
 }
-else
-printf("%d", l);
-}
-printf("\n");
 }
 }
 }
