@@ -14,11 +14,11 @@ for (i = 0; i <= n ; i++)
 {
 for (j = 0; j < n; j++)
 {
-if (i * j < 10)
+if (i * (j + 1) < 10)
 printf("%d,   ", i * j);
-else if (i * j < 100)
+else if (i * (j + 1) < 100)
 printf("%d,  ", i * j);
-else 
+else if (i * (j + 1) < 1000)
 printf("%d, ", i * j);
 }
 while (j == n)
