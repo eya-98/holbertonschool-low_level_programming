@@ -1,1 +1,1 @@
-read 
+details about second project in C
