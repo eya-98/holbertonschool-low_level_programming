@@ -15,5 +15,5 @@ if (haystack[j] == needle[0])
 return (haystack + j);
 }
 }
-return ('\0');
+return (haystack + 1);
 }
