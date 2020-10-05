@@ -14,7 +14,7 @@ while (haystack[j + i - 1] == needle[i - 1])
 {
 i++;
 if (!needle[i])
-return (haystack + j);
+return (&haystack[j]);
 }
 }
 return (0);
