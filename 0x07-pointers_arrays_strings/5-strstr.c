@@ -13,9 +13,9 @@ for (j = 0; haystack[j] != '\0'; j++)
 while (haystack[j + i - 1] == needle[i - 1])
 {
 i++;
-if (needle[i] == '\0')
-return (haystack + j);   
+if (!needle[i])
+return (haystack + j);
 }
 }
-return(0);
+return (0);
 }
