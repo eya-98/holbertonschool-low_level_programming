@@ -13,7 +13,6 @@ if (*s == c)
 {
 return (s);
 }
-else
 s++;
 }
 return (s + 1);
