@@ -14,6 +14,7 @@ if (haystack[j] == needle[0])
 {
 while ((haystack[j + i] == needle[i]) && (needle[i] != '\0'))
 i++;
+}
 return (haystack + j);
 }
 }
