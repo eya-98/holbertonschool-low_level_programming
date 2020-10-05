@@ -16,5 +16,5 @@ return (s);
 else
 s++;
 }
-return ('\0');
+return (s + 1);
 }
