@@ -16,5 +16,5 @@ i++;
 }
 return (haystack + j);
 }
-return ('\0');
+return (0);
 }
