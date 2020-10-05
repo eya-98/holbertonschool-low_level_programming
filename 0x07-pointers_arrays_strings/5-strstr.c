@@ -17,6 +17,8 @@ if (haystack[j] == needle[i])
 return (haystack + j);
 }
 }
+if (haystack[j] == needle[i])
+break;
 }
 return ('\0');
 }
