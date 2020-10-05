@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * *_memcpy - prints buffer in hexa
+ * *_memcpy - copies memory area.
  * @dest: destination var
  * @src: source var
  * @n : unsigned int n
