@@ -1,25 +1,25 @@
 #include "holberton.h"
 /**
- * wildcmp - a function that compares two strings 
- * @s1 : string 1
- * @s2 : string 2
+ * wildcmp - a function that compares two strings
+ * @s1 : first string
+ * @s2 : second string
  * Return: 1 or 0
  */
 int wildcmp(char *s1, char *s2)
 {
-int i = 0, j, k;
-for (k = 0; s1[k] >= '\0'; k++)
+int i = 0;
+int j, k;
 {
+if (*s2 == '*')
+return (wildcmp(s1, s2 + 1));
 }
-for (j = 0; s2[j] >= '\0'; j++)
+if (*s1 == *s2 && *s1 != '\0')
+return (wildcmp(s1 + 1, s2 + 1));
+if (*s1 == '\0')
 {
-}
- while (( s2[i] == '*'|| s1[i] == s2[i]) && (s1[i] != '\0' && s2[i] != '\0'))
-{
-i++;
-}
-if ((i == k) || (i == j))
-return (0);
-else 
+if (*s2 == '\0')
+return (1);
+if (*s2 == '*')
+return ((wildcmp(s1 + 1, s2)) || (wildcmp(s1, s2 + 1)));
 return (0);
 }
