@@ -1,7 +1,8 @@
 #include "holberton.h"
 /**
- * factorial - returns the factorial of a given number.
- *@n : int
+ * _pow_recrusion - returns the factorial of a given number.
+ * @x : int
+ * @y : int
  * Return: int.
  */
 int _pow_recursion(int x, int y)
