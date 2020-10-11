@@ -42,9 +42,7 @@ i = i + (s / 2);
 s = s % 2;
 }
 if (s > 0)
-{
 i = i + 1;
-}
 printf("%d\n", i);
 return (i);
 }
