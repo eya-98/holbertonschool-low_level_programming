@@ -14,10 +14,11 @@ if (argc != 2)
 printf("Error\n");
 return (1);
 }
-else
+else if (atoi(argv[1]) <= 0)
 {
-if (atoi(argv[1]) <= 0)
 printf("0\n");
+return (0);
+}
 else
 {
 s = atoi(argv[1]);
@@ -45,7 +46,6 @@ if (s > 0)
 cents = cents + 1;
 printf("%d\n", cents);
 return (cents);
-}
 }
 return (0);
 }
