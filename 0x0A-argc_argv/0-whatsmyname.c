@@ -1,8 +1,9 @@
 #include <stdio.h>
-/*
+/**
  * main - a program that prints its name
  * @argc : int
- * @argc : string
+ * @argv : string
+ * Return: always 0
  */
 int main(int argc, char *argv[])
 {
