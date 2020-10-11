@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include <stdlib.h>
+/**
+ * main - a program that prints its name
+ * @argc : int
+ * @argv : string
+ * Return: always 0
+ */
+int main(int argc, char *argv[])
+{
+  int a = 0, j, i, s;
+for (i = 1; i < argc; i++) 
+{
+for (j = 0; argv[i][j] != '\0' ; j++)
+{
+if (argv[i][j] <= '0' && argv[i][j] >= '9') 
+{
+printf("Error\n");
+break;
+return (1);
+}
+}
+}
+if (i < argc)
+for (s = 1; s < argc; s++)
+{
+a = a + atoi(argv[s]);
+}
+if (a <= 0)
+{
+printf("0\n");
+}
+else
+{
+printf("%d\n", a);
+}
+return (0);
+}
+ 
