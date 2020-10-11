@@ -40,9 +40,10 @@ s = s % 2;
 if (s > 0)
 cents = cents + 1;
 printf("%d\n", cents);
-return (cents);
-}
+ }
 else if (atoi(argv[1]) <= 0)
+{
 printf("0\n");
+}
 return (0);
 }
