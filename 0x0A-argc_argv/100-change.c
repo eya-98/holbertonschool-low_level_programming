@@ -8,7 +8,7 @@
  */
 int main(int argc, char *argv[])
 {
-int s, cents = 0;
+long int s, cents = 0;
 if (argc != 2)
 {
 printf("Error\n");
@@ -39,7 +39,7 @@ s = s % 2;
 }
 if (s > 0)
 cents = cents + 1;
-printf("%d\n", cents);
+printf("%lu\n", cents);
  }
 else if (atoi(argv[1]) <= 0)
 {
