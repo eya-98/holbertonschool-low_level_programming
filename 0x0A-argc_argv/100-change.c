@@ -40,7 +40,7 @@ cents = cents % 2;
 if (cents >= 1)
 s = s + 1;
 printf("%d\n", s);
-return (0);
+return (s);
 }
 else if (atoi(argv[1]) <= 0)
 printf("0\n");
