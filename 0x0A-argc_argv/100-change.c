@@ -20,17 +20,17 @@ cents = atoi(argv[1]);
 if (cents >= 25)
 {
 s = cents / 25;
-cents = cents - (s * 25);
+cents = cents % 25;
 }
 if (cents >= 10)
 {
 s = s + (cents / 10);
-cents = cents - s * 10;
+cents = cents % 10;
 }
 if (cents >= 5)
 {
 s = s + (cents / 5);
-cents = cents - s * 5;
+cents = cents % 5;
 }
 if (cents >= 2)
 {
@@ -40,7 +40,7 @@ cents = cents % 2;
 if (cents >= 1)
 s = s + 1;
 printf("%d\n", s);
-return (s);
+return (0);
 }
 else if (atoi(argv[1]) <= 0)
 printf("0\n");
