@@ -8,6 +8,7 @@
  */
 int main(int argc, char *argv[])
 {
+int s, i = 0;
 if (argc != 2)
 {
 printf("Error\n");
@@ -19,32 +20,32 @@ if (atoi(argv[1]) <= 0)
 printf("0\n");
 else
 {
-if (atoi(argv[1]) % 25 == 0)
+s = atoi(argv[1]);
+if (s >= 25)
 {
-printf("%d\n", atoi(argv[1]) / 25);
-return (atoi(argv[1]) / 25);
+i = s / 25;
+s = s - i * 25;
 }
-else if (atoi(argv[1]) % 10 == 0)
+if (s >= 10)
 {
-printf("%d\n", atoi(argv[1]) / 10);
-return (atoi(argv[1]) / 10);
+i = i + s / 10;
+s = s - i * 10;
 }
-else if (atoi(argv[1]) % 5 == 0)
+if (s >= 5)
 {
-printf("%d\n", atoi(argv[1]) / 5);
-return (atoi(argv[1]) / 5);
+i = i + s / 5;
+s = s - i * 5;
 }
-else if (atoi(argv[1]) % 2 == 0)
+if (s >= 2)
 {
-printf("%d\n", atoi(argv[1]) / 2);
-return (atoi(argv[1]) / 2);
+i = i + s / 2;
+s = s - i * 2;
 }
-else if (atoi(argv[1]) % 1 == 0)
-{
-printf("%d\n", atoi(argv[1]) / 1);
-return (atoi(argv[1]) / 1);
+if (s >= 1)
+i = i + 1;
 }
-}
+printf("%d\n", i);
+return (i);
 }
 return (0);
 }
