@@ -16,16 +16,14 @@ return (0);
 else
 {
 s = malloc(sizeof(char) * size);
+if (s == 0)
+{
+return (0);
+}
 for (i = 0; i <= size; i++)
 {
 s[i] = c;
 }
-if (s[0] == '\0')
-{
-return (0);
-}
-else
 return (s);
 }
-return (0);
 }
