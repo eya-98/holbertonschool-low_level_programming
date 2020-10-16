@@ -22,6 +22,6 @@ for (i = 0; i <= size; i++)
 {
 s[i] = c;
 }
-s[size + 1] = '\0'; 
+s[size + 1] = '\0';
 return (s);
 }
