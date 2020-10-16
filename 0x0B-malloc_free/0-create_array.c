@@ -13,8 +13,6 @@ char *s;
 unsigned int i;
 if (size == 0)
 return (0);
-else
-{
 s = malloc(sizeof(char) * size);
 if (s == 0)
 {
@@ -24,6 +22,6 @@ for (i = 0; i <= size; i++)
 {
 s[i] = c;
 }
+s[size + 1] = '\0'; 
 return (s);
-}
 }
