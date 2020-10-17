@@ -2,14 +2,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * print_grid -  returns a pointer to a 2 dimensional array of int
+ * **alloc_grid -  returns a pointer to a 2 dimensional array of int
  * @width : width of the grid
  * @height: height of the grid
  * Return: a pointer.
  */
 int **alloc_grid(int width, int height)
 {
-  int i, j;
+int i, j;
 int **s;
 if (height <= 0 || width <= 0)
 {
