@@ -20,7 +20,7 @@ if (s == 0)
 {
 return (0);
 }
-for (j = 0; j <= i; j++)
+for (j = 0; j < i; j++)
 {
 s[j] = str[j];
 }
