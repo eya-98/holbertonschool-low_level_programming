@@ -17,6 +17,7 @@ return (0);
 for (i = 0; str[i] > '\0'; i++)
 {
 }
+i = i + 1;
 s = malloc(sizeof(char) * i);
 if (s == 0)
 {
