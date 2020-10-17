@@ -9,10 +9,10 @@
 char *_strdup(char *str)
 {
 char *s;
- int i, j;
-for (i = 0; str[i] != '\0'; i++)
-  {
-  }
+int i, j;
+for (i = 0; str[i] > '\0'; i++)
+{
+}
 s = malloc(sizeof(char) * i);
 if (s == 0)
 {
@@ -24,4 +24,4 @@ s[j] = str[j];
 }
 s[j + 1] = '\0';
 return (s);
-} 
+}
