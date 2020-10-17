@@ -15,12 +15,13 @@ return (0);
 for (i = 0; str[i] >= '\0'; i++)
 {
 }
+i = i + 1;
 s = malloc(sizeof(char) * i);
 if (s == 0)
 {
 return (0);
 }
-for (j = 0; j <= i; j++)
+for (j = 0; j < i; j++)
 {
 s[j] = str[j];
 }
