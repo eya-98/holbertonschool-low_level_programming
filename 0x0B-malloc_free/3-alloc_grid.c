@@ -22,7 +22,7 @@ for (i = 0; i < height; i++)
 {
 s[i] = malloc(width * sizeof(int));
 if (s[i] == 0)
-return (0);
+free(s[i]);
 }
 for (i = 0; i < height; i++)
 {
