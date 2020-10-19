@@ -14,10 +14,13 @@ if (d->name == 0)
 printf("Name: (nil)\n");
 else
 printf("Name: %s\n", d->name);
-printf("age: %f\n", d->age);
-if (d->owner == 0)
-printf("owner: (nil)\n");
+ if (d->age == 0)
+printf("Age: (nil", d->age);
 else
-printf("owner: %s\n", d->owner);
+printf("Age: %f\n", d->age);
+if (d->owner == 0)
+printf("Owner: (nil)\n");
+else
+printf("Owner: %s\n", d->owner);
 }
 }
