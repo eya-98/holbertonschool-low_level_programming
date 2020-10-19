@@ -1,5 +1,5 @@
-#ifndef DJANGO
-#define DJANCO
+#ifndef DOG
+#define DOG
 /**
  *struct dog - structure of dog
  *@name: dog's name
