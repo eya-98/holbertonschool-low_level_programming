@@ -1,0 +1,4 @@
+#ifndef FUNCTION
+#define FUNCTION
+#define SUM(x, y) ((X + Y)) 
+#endif
