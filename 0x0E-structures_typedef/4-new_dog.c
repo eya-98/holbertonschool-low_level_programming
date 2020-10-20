@@ -31,10 +31,10 @@ return (0);
 }
 for (i = 0; name[i]; i++) 
 d->name[i] = name[i];
-d->name[i+1] = '\0';
+d->name[i] = '\0';
 d->age = age;
 for (j = 0; owner[j]; j++)
 d->owner[j] = owner[j];
-d->owner[j + 1] = '\0';
+d->owner[j] = '\0';
 return (d);
 }
