@@ -9,6 +9,7 @@
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
+  int i, j;
 dog_t *d;
 if (name == 0 || owner == 0)
 return (0);
@@ -28,8 +29,12 @@ free(d->name);
 free(d);
 return (0);
 }
-d->name = name;
+for (i = 0; name[i]; i++) 
+d->name[i] = name[i];
+d->name[i+1] = '\0';
 d->age = age;
-d->owner = owner;
+for (j = 0; owner[j]; j++)
+d->owner[j] = owner[j];
+d->owner[j + 1] = '\0';
 return (d);
 }
