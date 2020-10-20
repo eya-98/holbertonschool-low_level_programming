@@ -15,13 +15,13 @@ return (0);
 d = malloc(sizeof(dog_t));
 if (d == 0)
 return (0);
-d->name = malloc(sizeof(char) * (sizeof(name) + 1));
+d->name = malloc(sizeof(char) * (sizeof(*name) + 1));
 if (d->name == 0)
 {
 free(d);
 return (0);
 }
-d->owner = malloc(sizeof(char) * (sizeof(owner) + 1));
+d->owner = malloc(sizeof(char) * (sizeof(*owner) + 1));
 if (d->owner == 0)
 {
 free(d->name);
