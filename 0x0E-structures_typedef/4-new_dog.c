@@ -10,29 +10,26 @@
 dog_t *new_dog(char *name, float age, char *owner)
 {
 dog_t *d;
-char *n;
-char *owner;
-
 if (name == 0 || owner == 0)
 return (0);
 d = malloc(sizeof(dog_t));
 if (d == 0)
 return (0);
-d->n = malloc(sizeof(char) * (sizeof(name) + 1));
-if (d->n == 0)
+d->name = malloc(sizeof(char) * (sizeof(name) + 1));
+if (d->name == 0)
 {
 free(d);
 return (0);
 }
-d->o = malloc(sizeof(char) * (sizeof(owner) + 1));
-if (d->o == 0)
+d->owner = malloc(sizeof(char) * (sizeof(owner) + 1));
+if (d->owner == 0)
 {
-free(d->n);
+free(d->name);
 free(d);
 return (0);
 }
-d->n = name;
+d->name = name;
 d->age = age;
-d->o = owner;
+d->owner = owner;
 return (d);
 }
