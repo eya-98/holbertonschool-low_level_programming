@@ -1,6 +1,5 @@
 #include "dog.h"
 #include <stdlib.h>
-#include <stdio.h>
 /**
  * *new_dog - a function that creates a new dog
  * @name: char
@@ -10,7 +9,6 @@
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-unsigned int i, j;
 dog_t *d;
 if (name == 0 || owner == 0)
 return (0);
@@ -30,17 +28,9 @@ free(d->name);
 free(d);
 return (0);
 }
-for (i = 0; i <= sizeof(name); i++)
-{
-d->name[i] = name[i];
-}
-for (j = 0; j <= sizeof(owner); j++)
-{
-d->owner[j] = owner[j];
-}
+d->name = name;
+d->owner = owner;
 d->age = age;
-d->name[i] = '\0';
-d->owner[j] = '\0';
 return (d);
 }
 
