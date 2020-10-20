@@ -15,21 +15,21 @@ return (0);
 d = malloc(sizeof(dog_t));
 if (d == 0)
 return (0);
-d->name = malloc(sizeof(char) * (sizeof(*name) + 1));
-if (d->name == 0)
+d->n = malloc(sizeof(char) * (sizeof(name) + 1));
+if (d->n == 0)
 {
 free(d);
 return (0);
 }
-d->owner = malloc(sizeof(char) * (sizeof(*owner) + 1));
-if (d->owner == 0)
+d->o = malloc(sizeof(char) * (sizeof(owner) + 1));
+if (d->o == 0)
 {
-free(d->name);
+free(d->n);
 free(d);
 return (0);
 }
-d->name = name;
+d->n = name;
 d->age = age;
-d->owner = owner;
+d->o = owner;
 return (d);
 }
