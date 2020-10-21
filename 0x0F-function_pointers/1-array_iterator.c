@@ -2,9 +2,9 @@
 #include "function_pointers.h"
 /**
  * array_iterator - a function that executes a function
- * @array : 
+ * @array : array
  * @size : size_t
- * @action : pointer 
+ * @action : pointer
  * Return: Nothing.
  */
 void array_iterator(int *array, size_t size, void (*action)(int))
