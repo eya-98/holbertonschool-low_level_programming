@@ -11,7 +11,7 @@ va_list valist;
 int i = 0;
 char c, *s, *separator = "";
 va_start(valist, format);
-while (format[i])
+while (format && format[i])
 {
 c = format[i];
 switch (c)
