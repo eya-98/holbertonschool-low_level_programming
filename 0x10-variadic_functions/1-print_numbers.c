@@ -15,11 +15,11 @@ return;
 va_start(valist, n);
 for (i = 0; i < n - 1; i++)
 {
-printf("%d", va_arg(valist, int));
+printf("%d", va_arg(valist, unsigned int));
 if (separator != '\0')
 printf("%s", separator);
 }
-printf("%d", va_arg(valist, int));
+printf("%d", va_arg(valist, unsigned int));
 printf("\n");
 va_end(valist);
 }
