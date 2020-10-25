@@ -12,7 +12,7 @@ char c;
 char *str;
 char *separator = ", ";
 va_list valist;
-va_start (valist, format);
+va_start(valist, format);
 while (format[i])
 {
 c = format[i];
@@ -23,10 +23,10 @@ switch (c)
 case 'i':
 printf("%d%s", va_arg(valist, int), separator);
 break;
-case 'c' :
+case 'c':
 printf("%c%s", va_arg(valist, int), separator);
 break;
-case 's' :
+case 's':
 str = va_arg(valist, char *);
 if (str == '\0')
 str = "(nil)";
