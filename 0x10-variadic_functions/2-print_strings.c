@@ -16,7 +16,7 @@ return;
 va_start(valist, n);
 for (i = 0; i < n ; i++)
 {
-if (separator != '\0' && i != 0)
+  if (separator != '\0' && (i + 1) != n)
 printf("%s", separator);
 str = va_arg(valist, char *);
 if (str == '\0')
