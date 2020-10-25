@@ -7,37 +7,37 @@
  */
 void print_all(const char * const format, ...)
 {
-int i = 0;
-char c;
-char *str;
-char *separator = ", ";
 va_list valist;
+int i = 0;
+char c, *s, *separator = "";
 va_start(valist, format);
 while (format[i])
 {
 c = format[i];
-if (format[i + 1] == '\0')
-separator = "";
 switch (c)
 {
-case 'i':
-printf("%d%s", va_arg(valist, int), separator);
-break;
 case 'c':
-printf("%c%s", va_arg(valist, int), separator);
+printf("%s%c", separator, va_arg(valist, int));
+separator = ", ";
+break;
+case 'i':
+printf("%s%d", separator, va_arg(valist, int));
+separator = ", ";
+break;
+case 'f':
+printf("%s%f", separator, va_arg(valist, double));
+separator = ", ";
 break;
 case 's':
-str = va_arg(valist, char *);
-if (str == '\0')
-str = "(nil)";
-printf("%s%s", str, separator);
-break;
-case 'f': 
-printf("%f%s", va_arg(valist, double), separator);
+s = va_arg(valist, char *);
+if (!s)
+s = "(nil)";
+printf("%s%s", separator, s);
+separator = ", ";
 break;
 }
 i++;
 }
-printf("\n");
 va_end(valist);
+printf("\n");
 }
