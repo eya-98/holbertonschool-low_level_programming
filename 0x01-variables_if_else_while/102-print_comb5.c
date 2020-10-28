@@ -9,26 +9,20 @@
  */
 int main(void)
 {
-int d, j, m, n;
-for (d = '0' ; d <= '9'; d++)
+int d, j;
+for (d = 0; d <= 98; d++)
 {
-for (j = '0' ; j <= '8'; j++)
+for (j = 1; j <= 99; j++)
 {
-for (m = '0'; m <= '9'; m++)
-{
-for (n = '1'; n <= '9'; n++)
-{
-putchar(d);
-putchar(j);
-putchar (' ');
-putchar(m);
-putchar (n);
-if ((d != '9') && (j != '8') && (m != '9') && (n != '9'))
+putchar('0' + d / 10);
+putchar('0' + d % 10);
+putchar(' ');
+putchar('0' + j / 10);
+putchar('0' + j % 10);
+if ((d != 98) && (j != 99))
 {
 putchar(',');
 putchar(' ');
-}
-}
 }
 }
 }
