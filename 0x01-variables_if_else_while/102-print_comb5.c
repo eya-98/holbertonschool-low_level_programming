@@ -23,7 +23,7 @@ putchar(j);
 putchar (' ');
 putchar(m);
 putchar (n);
-if ((d != '9') || (j != '8') || (m != '9') || (n != '9'))
+if ((d != '9') && (j != '8') && (m != '9') && (n != '9'))
 {
 putchar(',');
 putchar(' ');
