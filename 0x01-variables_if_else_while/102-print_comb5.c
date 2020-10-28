@@ -14,11 +14,11 @@ for (d = 0; d <= 98; d++)
 {
 for (j = 1; j <= 99; j++)
 {
-putchar('0' + d / 10);
-putchar('0' + d % 10);
+putchar(d / 10 + '0');
+putchar(d % 10 + '0');
 putchar(' ');
-putchar('0' + j / 10);
-putchar('0' + j % 10);
+putchar(j / 10 + '0');
+putchar(j % 10 + '0');
 if ((d != 98) && (j != 99))
 {
 putchar(',');
