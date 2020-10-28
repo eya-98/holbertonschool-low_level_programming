@@ -14,15 +14,18 @@ for (d = 0; d <= 98; d++)
 {
 for (j = 1; j <= 99; j++)
 {
+if (d < j)
+{
 putchar(d / 10 + '0');
 putchar(d % 10 + '0');
 putchar(' ');
 putchar(j / 10 + '0');
 putchar(j % 10 + '0');
-if ((d != 98) && (j != 99))
+if ((d != 98) || (j != 99))
 {
 putchar(',');
 putchar(' ');
+}
 }
 }
 }
