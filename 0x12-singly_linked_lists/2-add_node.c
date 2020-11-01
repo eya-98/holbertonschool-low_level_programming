@@ -4,7 +4,8 @@
 #include "lists.h"
 /**
  * *add_node - a function that adds a new node
- * @h : data structure
+ * @head : data structure
+ * @str : const char
  * Return: the number of nodes
  */
 list_t *add_node(list_t **head, const char *str)
