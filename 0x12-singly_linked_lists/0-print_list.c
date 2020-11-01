@@ -14,10 +14,10 @@ int i = 0;
 while (h != NULL)
 {
 if (h->str == NULL)
-printf("[%d] (nil)\n", h->len);
+printf("[%u] (nil)\n", h->len);
 else
 {
-printf("[%d] %s\n", h->len, h->str);
+printf("[%u] %s\n", h->len, h->str);
 }
 h = h->next;
 i++;
