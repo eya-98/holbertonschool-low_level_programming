@@ -17,7 +17,7 @@ if (h->str == NULL)
 printf("[0] (nil)");
 else
 {
-printf("[%d] %s", h->len, h->str);
+printf("[%d] %s\n", h->len, h->str);
 h = (*h).next;
 i++;
 }
