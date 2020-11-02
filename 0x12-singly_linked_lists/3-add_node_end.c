@@ -1,39 +1,34 @@
-#include <stdlib.h>
-#include <string.h>
-#include <stdio.h>
 #include "lists.h"
+#include <stdlib.h>
+#include <stdio.h>
 /**
- * *add_node - a function that adds a new node
- * @head : data structure
- * @str : const char
- * Return: the number of nodes
+ * add_node_end - add a new node at the end of a list function
+ *@head: pointer to the head of the list
+ *@str: string to add
+ *Return: adress of new element or NULL
  */
-list_t *add_node(list_t **head, const char *str)
+list_t *add_node_end(list_t **head, const char *str)
 {
 list_t *new, *string;
-int len = 0;
+unsigned int len = 0;
+if (str == NULL)
+return (NULL);
 new = malloc(sizeof(list_t));
 if (new == NULL)
 return (NULL);
-if (str == NULL)
-return (NULL);
-while (str[len] != '\0')
-{
-len++;
-}
 new->str = strdup(str);
+while (str[len])
+len++;
 new->len = len;
 new->next = NULL;
-if (head == NULL)
+if (*head == NULL)
 {
 *head = new;
 return (new);
 }
 string = *head;
 while (string->next != NULL)
-{
 string = string->next;
-}
 string->next = new;
 return (new);
 }
