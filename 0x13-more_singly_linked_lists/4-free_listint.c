@@ -4,7 +4,7 @@
 #include "lists.h"
 /**
  * free_listint - free a list of int
- * @h : data structure
+ * @head : data structure
  * Return: void
  */
 void free_listint(listint_t *head)
