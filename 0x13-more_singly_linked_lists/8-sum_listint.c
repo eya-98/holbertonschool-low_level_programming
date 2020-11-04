@@ -16,7 +16,7 @@ if (head == NULL)
 return (0);
 new = head;
 sum = new->n;
-new= new->next;
+new = new->next;
 while (new != '\0')
 {
 sum = sum + new->n;
