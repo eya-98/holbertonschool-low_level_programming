@@ -19,6 +19,8 @@ return (0);
 string = *head;
 for (i = 0; string != '\0'; i++)
 {
+if (string == NULL)
+return (0);
 string = string->next;
 }
 if (i < idx)
@@ -37,6 +39,8 @@ else
 {
 for (i = 0; i < idx - 1; i++)
 {
+if (str == NULL)
+return (0);
 str = str->next;
 }
 new->next = str->next;
