@@ -32,8 +32,8 @@ new->n = n;
 str = *head;
 if (idx == 0)
 {
-new->next = str;
-str = new;
+new->next = *head;
+*head = new;
 }
 else
 {
