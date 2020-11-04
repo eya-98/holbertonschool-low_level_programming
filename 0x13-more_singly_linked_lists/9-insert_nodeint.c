@@ -26,6 +26,8 @@ if (i < idx)
 return (0);
 for (i = 0; i < idx; i++)
 {
+if (new == NULL)
+return (0);
 new = new->next;
 }
 new->n = n;
