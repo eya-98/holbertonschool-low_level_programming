@@ -15,6 +15,8 @@ int sum;
 if (head == '\0')
 return (0);
 new = head;
+if (new == NULL)
+return (0);
 sum = new->n;
 while (new)
 {
