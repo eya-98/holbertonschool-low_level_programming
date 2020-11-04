@@ -31,6 +31,7 @@ str = *head;
 if (idx == 0)
 {
 new->next = str;
+str = new;
 }
 else
 {
