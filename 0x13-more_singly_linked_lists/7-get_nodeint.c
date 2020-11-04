@@ -25,8 +25,9 @@ return (NULL);
 new = head;
 for (i = 0; i < index; i++)
 {
+if (new == NULL)
+return (NULL);
 new = new->next;
 } 
-new = new->next;
- return (new);
+return (new);
 }
