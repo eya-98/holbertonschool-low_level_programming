@@ -14,8 +14,8 @@ string = *head;
 while (string)
 {
 new = string;
-free(new);
 string = string->next;
+free(new);
 }
 *head = NULL;
 }
