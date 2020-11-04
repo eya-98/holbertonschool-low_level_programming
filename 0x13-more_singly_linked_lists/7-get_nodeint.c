@@ -23,7 +23,7 @@ string = string->next;
 if (i < index)
 return (NULL);
 new = head;
-for (i = 0; i < index - 1; i++)
+for (i = 0; i < index; i++)
 {
 new = new->next;
 } 
