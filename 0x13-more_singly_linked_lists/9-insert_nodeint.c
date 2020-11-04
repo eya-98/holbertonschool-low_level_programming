@@ -17,19 +17,28 @@ listint_t *string, *new;
 if (*head == NULL)
 return (0);
 string = *head;
-new = *head;
 for (i = 0; string != '\0'; i++)
 {
 string = string->next;
 }
 if (i < idx)
 return (0);
-for (i = 0; i < idx; i++)
-{
+new = malloc(sizeof(listint_t));
+new = *head;
 if (new == NULL)
 return (0);
+if (idx == 0)
+{
+new->n = n;
+new->next = *head;
+}
+else
+{ 
+for (i = 0; i < idx; i++)
+{
 new = new->next;
 }
 new->n = n;
+}
 return (new);
 }
