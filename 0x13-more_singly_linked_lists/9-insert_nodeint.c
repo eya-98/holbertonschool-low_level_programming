@@ -31,7 +31,5 @@ return (0);
 new = new->next;
 }
 new->n = n;
-for (i = idx + 1; new != '\0'; i++)
-new = new->next;
 return (new);
 }
