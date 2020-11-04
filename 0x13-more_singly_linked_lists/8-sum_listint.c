@@ -12,13 +12,12 @@ int sum_listint(listint_t *head)
 {
 listint_t *new;
 int sum;
-if (head == '\0')
+if (head == NULL)
 return (0);
 new = head;
-if (new == NULL)
-return (0);
 sum = new->n;
-while (new)
+new= new->next;
+while (new != '\0')
 {
 sum = sum + new->n;
 new = new->next;
