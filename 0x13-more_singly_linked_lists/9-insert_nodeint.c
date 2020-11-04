@@ -34,7 +34,7 @@ new->next = *head;
 }
 else
 { 
-for (i = 0; i < idx; i++)
+for (i = 0; i < idx - 1; i++)
 {
 new = new->next;
 }
