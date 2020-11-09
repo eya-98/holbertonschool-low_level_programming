@@ -31,6 +31,7 @@ free(buf);
 return (0);
 }
 str2 = write(STDOUT_FILENO, buf, str);
+close(fd);
 if (str2 == -1)
 {
 free(buf);
