@@ -19,10 +19,10 @@ char *buf;
 if (filename == NULL)
 return (0);
 fd = open(filename, O_RDONLY);
+if (fd == -1)
+return (0);
 buf = malloc(sizeof(char) * letters);
 if (buf == NULL)
-return (0);
-if (fd == 0)
 return (0);
 str = read(fd, buf, letters);
 if (str == -1)
