@@ -7,7 +7,7 @@
 #include <fcntl.h>
 /**
  * create_file - a function that creates a file.
- * @filename : the file
+ * @filename : a file
  * @text_content : a NULL terminated string to write to the file
  * Return: an int
  */
