@@ -25,8 +25,11 @@ if (text_content[i] == '\0')
 {
 return (1);
 }
+else
+{
 for (i = 0; text_content[i] != '\0'; i++)
 {
+}
 }
 str = write(fd, text_content, i);
 if (str == -1)
