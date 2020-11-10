@@ -23,7 +23,6 @@ return (-1);
 i = 0;
 if (text_content[i] == '\0')
 {
-close(fd);
 return (1);
 }
 for (i = 0; text_content[i] != '\0'; i++)
