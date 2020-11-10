@@ -27,7 +27,7 @@ for (i = 0; text_content[i]; i++)
 }
 str = write(fd, text_content, i);
 if (str == -1)
-return (1);
+return (-1);
 close(fd);
 return (1);
 }
