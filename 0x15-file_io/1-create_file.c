@@ -17,7 +17,7 @@ int str;
 int fd, i;
 if (filename == NULL)
 return (-1);
-fd = open(filename, O_WRONLY | O_TRUNC | O_CREAT, 0600);
+fd = open(filename, O_RDWR | O_TRUNC | O_CREAT, 0600);
 if (fd == -1)
 return (-1);
 i = 0;
