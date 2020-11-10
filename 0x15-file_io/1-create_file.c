@@ -6,7 +6,7 @@
 #include <sys/stat.h>
 #include <fcntl.h>
 /**
- * read_textfile - reads a text file and prints it to the POSIX standard output
+ * create_file - a function that creates a file.
  * @filename : the file
  * @text_content : a NULL terminated string to write to the file
  * Return: an int
