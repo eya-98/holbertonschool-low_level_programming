@@ -21,11 +21,7 @@ fd = open(filename, O_RDWR | O_TRUNC | O_CREAT, 0600);
 if (fd == -1)
 return (-1);
 i = 0;
-if (text_content[i] == '\0')
-{
-return (1);
-}
-else
+if (text_content[i] != '\0')
 {
 for (i = 0; text_content[i] != '\0'; i++)
 {
