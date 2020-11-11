@@ -22,7 +22,7 @@ _putchar(str[j]);
 else
 {
 x = (i - 1) / 2;
-for (j = x; j < i; j++)
+for (j = x; j <= i; j++)
 _putchar(str[j]);
 }
 _putchar('\n');
