@@ -9,26 +9,25 @@
 void rev_string(char *s)
 {
 char *t;
-int i, j, l;
-if ( s == NULL)
+int l, begin, end, length;
+if (s == NULL)
 return;
-for (i = 0; s[i] != '\0'; i++)
+for (length = 0; s[length] != '\0'; length++)
 {
 }
-i++;
-t = malloc(sizeof(char) * i);
+t = malloc(sizeof(char) * length);
+end = length - 1;
 if (t == NULL)
 return;
-i--;
-for (j = 0; j < i; j++)
+for (begin = 0; begin < length; begin++)
 {
-t[j] = s[j];
+t[begin] = s[end];
+end--;
 }
-j = 0;
-for (l = i; l > 0; l--)
+for (l = 0; l < length; l++)
 {
-s[j] = t[l];
-j++;
+s[l] = t[l];
 }
 free(t);
+s[l] = '\0';
 }
