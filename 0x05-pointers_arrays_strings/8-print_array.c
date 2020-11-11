@@ -14,5 +14,6 @@ while (i < n - 1)
 printf("%d, ", a[i]);
 i++;
 }
+if (i == n)
 printf("%d\n", a[i]);
 }
