@@ -9,6 +9,8 @@
 char *_strncat(char *dest, char *src, int n)
 {
 int i, j, k;
+if (dest[0] == '\0' && src[0] == '\0')
+return (0);
 for (j = 0; src[j] != '\0'; j++)
 {
 }
