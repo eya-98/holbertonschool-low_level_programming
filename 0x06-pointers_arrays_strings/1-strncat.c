@@ -11,7 +11,7 @@ int i, j, k;
 for (j = 0; src[j] != '\0'; j++)
 {
 }
-if (n >= j)
+if (n > j)
 return (0);
 for (k = 0; dest[k] != '\0'; k++)
 {
@@ -20,6 +20,9 @@ for (i = 0; i < n; i++)
 {
 dest[k + i] = src[i];
 }
+if (n > 0)
+{
 dest[k + i] = '\0';
+}
 return (dest);
 }
