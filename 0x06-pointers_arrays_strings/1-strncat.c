@@ -17,7 +17,7 @@ for (j = 0; src[j] != '\0'; j++)
 for (k = 0; dest[k] != '\0'; k++)
 {
 }
-if (n < j)
+if (n <= j)
 {
 for (i = 0; i < n; i++)
 {
@@ -31,7 +31,7 @@ for (i = 0; i < j; i++)
 dest[k + i] = src[i];
 }
 }
-if (n > 0)
+ if (n > 0)
 {
 dest[k + i] = '\0';
 }
