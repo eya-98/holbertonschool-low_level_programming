@@ -12,18 +12,22 @@ int i, j, k;
 for (j = 0; src[j] != '\0'; j++)
 {
 }
-if (n > j)
-return (0);
 for (k = 0; dest[k] != '\0'; k++)
 {
 }
-if (n == 0 && dest == '\0')
-return (0);
-if (n == 0)
-return (dest);
+if (n < j)
+{
 for (i = 0; i < n; i++)
 {
 dest[k + i] = src[i];
+}
+}
+if (n > j)
+{
+for (i = 0; i < j; i++)
+{
+dest[k + i] = src[i];
+}
 }
 if (n > 0)
 {
