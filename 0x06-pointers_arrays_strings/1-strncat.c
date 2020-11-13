@@ -4,6 +4,7 @@
  * @dest : destination
  * @src : source
  * @n : number of bytes
+ * Return: a string
  */
 char *_strncat(char *dest, char *src, int n)
 {
@@ -16,7 +17,7 @@ return (0);
 for (k = 0; dest[k] != '\0'; k++)
 {
 }
-for (i = 0; i < n; i++)
+for (i = 0; i <= n; i++)
 {
 dest[k + i] = src[i];
 }
