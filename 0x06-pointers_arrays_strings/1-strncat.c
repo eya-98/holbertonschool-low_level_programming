@@ -17,7 +17,9 @@ return (0);
 for (k = 0; dest[k] != '\0'; k++)
 {
 }
-for (i = 0; i <= n; i++)
+if (n == 0)
+return (dest);
+for (i = 0; i < n; i++)
 {
 dest[k + i] = src[i];
 }
