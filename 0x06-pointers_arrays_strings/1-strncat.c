@@ -19,14 +19,14 @@ for (k = 0; dest[k] != '\0'; k++)
 }
 if (n <= j)
 {
-for (i = 0; i < n; i++)
+for (i = 0; i != n; i++)
 {
 dest[k + i] = src[i];
 }
 }
 if (n > j)
 {
-for (i = 0; i < j; i++)
+for (i = 0; i != j; i++)
 {
 dest[k + i] = src[i];
 }
