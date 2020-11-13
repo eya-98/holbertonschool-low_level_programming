@@ -17,6 +17,8 @@ return (0);
 for (k = 0; dest[k] != '\0'; k++)
 {
 }
+if (n == 0 && dest == '\0')
+return (0);
 if (n == 0)
 return (dest);
 for (i = 0; i < n; i++)
