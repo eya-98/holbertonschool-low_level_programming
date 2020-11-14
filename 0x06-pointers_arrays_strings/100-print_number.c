@@ -6,31 +6,29 @@
  */
 void print_number(int n)
 {
-int z, x, num, rest;
+unsigned int z, num;
 if (n < 0)
 {
 _putchar('-');
 n = n * (-1);
 }
 num = n;
-z = 10;
-x = n;
-if (x > 0)
+z = 1;
+if (num > 0)
 {
-while (x != 0)
+while (num / 10 != 0)
 {
 z = z * 10;
-x = x / 10;
+num = num / 10;
 }
-while (num > 0)
+while (z > 0)
 {
 num = n / z;
-_putchar(num + '0');
-n = n - (num *z);
+_putchar('0' + num);
+n = n - (num * z);
 z = z / 10;
 }
 }
-rest = n % 10;
-_putchar(rest + '0');
-_putchar('\n');
+if (num == 0)
+_putchar ('0');
 }
