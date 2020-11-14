@@ -2,7 +2,7 @@
 #include <unistd.h>
 /**
  * print_number - print an int
- * @n : the int 
+ * @n : the int
  */
 void print_number(int n)
 {
@@ -25,10 +25,10 @@ while (z > 0)
 {
 num = n / z;
 _putchar('0' + num);
-n = n - (num * z);
+n = n - (num *z);
 z = z / 10;
 }
 }
 if (num == 0)
-_putchar ('0');
+_putchar ('0' + num);
 }
