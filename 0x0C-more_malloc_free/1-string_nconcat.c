@@ -40,7 +40,10 @@ for (i = 0; s1[i] != '\0'; i++)
 s[i] = s1[i];
 }
 if (n == 0)
+{
+s[i] = '\0';
 return (s);
+}
 for (j = 0; j < n; j++)
 {
 s[i] = s2[j];
