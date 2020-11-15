@@ -19,7 +19,7 @@ return (0);
 s = malloc(sizeof(char) * nmemb * size);
 if (s == NULL)
 return (0);
- for (i = 0; i < (nmemb * size); i++)
+for (i = 0; i < (nmemb * size); i++)
 {
 s[i] = 0;
 }
