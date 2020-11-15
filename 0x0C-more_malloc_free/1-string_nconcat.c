@@ -22,13 +22,14 @@ if (n == 0)
 {
 return (s1);
 }
-if (n < j)
+if (n >= j)
 {
 s = malloc(sizeof(char) * (i + j - 1));
 if (s == NULL)
 return (0);
+n = j - 1;
 }
-if (n >= j)
+if (n < j)
 {
 s = malloc(sizeof(char) * (i + n));
 if (s == NULL)
@@ -38,7 +39,7 @@ for (i = 0; s1[i] != '\0'; i++)
 {
 s[i] = s1[i];
 }
-for (j = 0; s2[j] != '\0'; j++)
+for (j = 0; j < n; j++)
 {
 s[i] = s2[j];
 i++;
