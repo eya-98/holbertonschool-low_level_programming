@@ -24,14 +24,14 @@ return (s1);
 }
 if (n > j)
 {
-s = malloc(sizeof(char) * (i + j - 1));
+s = malloc(sizeof(char) * (i + j + 1));
 if (s == NULL)
 return (0);
-n = j - 1;
+n = j;
 }
 if (n <= j)
 {
-s = malloc(sizeof(char) * (i + n));
+s = malloc(sizeof(char) * (i + n + 1));
 if (s == NULL)
 return (0);
 }
