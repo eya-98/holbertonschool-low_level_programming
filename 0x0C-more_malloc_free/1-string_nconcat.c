@@ -30,7 +30,7 @@ return (0);
 }
 if (n >= j)
 {
-s = malloc(sizeof(char) * (i + n - 1));
+s = malloc(sizeof(char) * (i + n));
 if (s == NULL)
 return (0);
 }
