@@ -14,6 +14,8 @@ char *s;
 unsigned int i, j;
 if (s1 == NULL)
 s1 = "";
+if (s2 == NULL)
+s2 = "";
 for (i = 0; s1[i] != '\0'; i++)
 {
 }
@@ -27,7 +29,7 @@ if (s == NULL)
 return (0);
 n = j;
 }
-if (n <= j)
+if (n < j)
 {
 s = malloc(sizeof(char) * (i + n + 1));
 if (s == NULL)
@@ -44,9 +46,9 @@ return (s);
 }
 for (j = 0; j < n; j++)
 {
-s[i] = s2[j];
+s[i + 1] = s2[j];
 i++;
 }
-s[i] = '\0';
+s[i + 1] = '\0';
 return (s);
 }
