@@ -17,7 +17,7 @@ return (0);
 if (av == NULL)
 return (0);
 k = 0;
-for (i = 1; i < ac; i++)
+for (i = 0; i < ac; i++)
 {
 while (av[i][k] != '\0')
 {
@@ -29,7 +29,7 @@ s = malloc(sizeof(char) * (k + 1));
 if (s == NULL)
 return (0);
 l = 0;
-for (i = 1; i < ac; i++)
+for (i = 0; i < ac; i++)
 {
 k = 0;
 while (av[i][k] != '\0')
