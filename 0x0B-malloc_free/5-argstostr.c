@@ -10,17 +10,19 @@
  */
 char *argstostr(int ac, char **av)
 {
-int i, l, k;
+int j, i, l, k;
 char *s;
 if (ac == 0)
 return (0);
 if (av == NULL)
 return (0);
 k = 0;
-for (i = 0; i < ac; i++)
+for (i = 0; av[i] != '\0'; i++)
 {
-while (av[i][k] != '\0')
+j = 0;
+while (av[i][j] != '\0')
 {
+j++;
 k++;
 }
 k++;
