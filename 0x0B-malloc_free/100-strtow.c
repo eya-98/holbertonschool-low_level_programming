@@ -34,7 +34,7 @@ return (NULL);
 n = cnt(str);
 if (n == 1)
 return (NULL);
-string = malloc(n * sizeof(char *));
+string = malloc(sizeof(char *) * n);
 if (string == NULL)
 return (NULL);
 string[n - 1] = NULL;
@@ -46,7 +46,7 @@ for (j = 1; str[i + j] != ' ' && str[i + j]; j++)
 {
 }
 j++;
-string[c] = malloc(j * sizeof(char));
+string[c] = malloc(sizeof(char) * j);
 j--;
 if (string[c] == NULL)
 {
