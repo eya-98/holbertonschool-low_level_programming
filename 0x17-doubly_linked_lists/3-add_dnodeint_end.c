@@ -24,9 +24,9 @@ while (new != NULL)
 {
 new = new->next;
 }
+new->next = node;
 node->prev = new;
 node->next = NULL;
 node->n = n;
-new->next = node;
 return (node);
 }
