@@ -18,7 +18,7 @@ node->next = NULL;
 node->n = n;
 *head = node;
 node->prev = NULL;
-return(node);
+return (node);
 }
 while (new->next)
 {
