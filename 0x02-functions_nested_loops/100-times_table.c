@@ -12,20 +12,36 @@ if ((n >= 0) && (n <= 15))
 {
 for (i = 0; i <= n ; i++)
 {
-for (j = 0; j < n; j++)
+for (j = 0; j <= n; j++)
 {
+if (i * j < 10)
+_putchar('0' + i * j);
+else if (i * j < 100)
+{
+_putchar('0' + (i * j) / 10);
+_putchar('0' + (i * j) % 10);
+}
+else if (i * j < 1000)
+{
+_putchar('0' + (i * j) / 100);
+_putchar('0' + (((i * j) - ((i * j) / 100) * 100)) / 10);
+_putchar('0' + (i * j) % 10);
+}
+if (j != n)
+{
+_putchar(',');
+_putchar(' ');
+if (i * (j + 1) < 100)
+{
+_putchar(' ');
 if (i * (j + 1) < 10)
-printf("%d,   ", i * j);
-else if (i * (j + 1) < 100)
-printf("%d,  ", i * j);
-else if (i * (j + 1) < 1000)
-printf("%d, ", i * j);
+_putchar(' ');
 }
-while (j == n)
-{
-printf("%d\n", i * j);
-j++;
+}
+else
+_putchar('\n');
 }
 }
 }
 }
+
