@@ -1,6 +1,6 @@
 #include"stdio.h"
 /**
- *main - sum the even numbers of a fibonnaci sequence 
+ *main - sum the even numbers of a fibonnaci sequence
  *Return: the sum
  */
 int main(void)
