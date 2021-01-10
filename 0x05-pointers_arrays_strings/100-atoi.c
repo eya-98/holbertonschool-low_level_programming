@@ -11,6 +11,7 @@ int _atoi(char *s)
 {
 unsigned int i, num, b, k;
 char *t = "0123456789";
+b = 0;
 i = 0;
 num = 0;
 while (s[i] != '\0')
@@ -24,23 +25,20 @@ i++;
 }
 else
 {
-b = 0;
 for (k = 0; t[k] != '\0'; k++)
 {
+b = 0;
 if (s[i] == t[k])
 {
 num = (num * 10) + k;
 b++;
 break;
-if (b == 0)
-{
-if (num == 0)
-return (0);
-else
-return num;
 }
 }
-}
+if (b == 0 && num == 0)
+i++;
+else if (b == 0 && num != 0)
+return (num);
 }
 }
 return (0);
