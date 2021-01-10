@@ -9,7 +9,7 @@ long int i, j, n;
 i = 1;
 j = 2;
 n = 0;
-while (n < 25)
+while (n < 24)
 {
 printf("%ld, ", i);
 printf("%ld, ", j);
@@ -17,6 +17,8 @@ i = i + j;
 j = i + j;
 n++;
 }
+printf("%ld, ", i);
+printf("%ld", j);
 printf("\n");
 return (0);
 }
