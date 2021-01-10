@@ -6,35 +6,32 @@
  */
 void print_number(int n)
 {
-unsigned int i, k, f, l, j;
-i = n;
+unsigned int m, i, j;
 if (n < 0)
 {
 _putchar('-');
-i = -i;
+n = -n;
 }
-k = i / 10;
 j = 1;
-f = i % 10;
-if (i >= 10)
-{
-while (k >= 10)
-{
-f = (f * 10) + (k % 10);
-k = k / 10;
-j = j + 1;
-}
-f = (f * 10) + (k % 10);
-for (l = 1 ; l <= j; l++)
-{
-_putchar(f % 10 + '0');
-f = f / 10;
-}
-_putchar (i % 10 + '0');
-}
+if (n < 10)
+_putchar('0' + n);
 else
 {
-_putchar(i % 10 + '0');
+i = n;
+m = 0;
+while (i >= 10)
+{
+j = j * 10;
+i = i / 10;
+m++;
 }
-_putchar('\n');
+while (m != 0)
+{
+_putchar('0' + n / j);
+n = n - (n / j) * j;
+j = j / 10;
+m--;
+}
+_putchar('0' + n % 10);
+}
 }
