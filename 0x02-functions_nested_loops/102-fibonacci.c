@@ -1,7 +1,7 @@
 #include"stdio.h"
 /**
- *
- *
+ *main - print the 50 fibonacci number starting with 1 and 2
+ *Return: Null
  */
 int main(void)
 {
@@ -12,7 +12,7 @@ n = 2;
 while (n != 50)
 {
 printf("%d, ", i);
-printf("%d", j);
+printf("%d, ", j);
 i = i + j;
 j = i + j;
 n++;
