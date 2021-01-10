@@ -9,7 +9,7 @@ int i, j, n;
 i = 1;
 j = 2;
 n = 0;
-while (n <= 25)
+while (n < 25)
 {
 printf("%d, ", i);
 printf("%d, ", j);
