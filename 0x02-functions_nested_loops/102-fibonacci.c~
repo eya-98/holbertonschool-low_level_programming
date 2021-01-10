@@ -1,0 +1,22 @@
+#include"stdio.h"
+/**
+ *
+ *
+ */
+int main(void)
+{
+int i, j, k, n;
+i = 1;
+j = 2;
+printf("%d, ", i);
+printf("%d, ", j);
+n = 2;
+while (n != 50)
+{
+printf("%d, ", k);
+k = i + j;
+j = k;
+n = 2;
+}
+return (0);
+}
