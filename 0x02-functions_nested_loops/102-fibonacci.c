@@ -9,7 +9,7 @@ int i, j, n;
 i = 1;
 j = 2;
 n = 2;
-while (n != 50)
+while (n <= 51)
 {
 printf("%d, ", i);
 printf("%d, ", j);
