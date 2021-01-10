@@ -3,8 +3,9 @@
 #include "stdlib.h"
 #include "string.h"
 /**
- *
- *
+ *_atoi - convert a string into an integer
+ *@s: the string
+ *Return: an integer
  *
  */
 int _atoi(char *s)
