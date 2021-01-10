@@ -28,7 +28,7 @@ m++;
 while (m != 0)
 {
 _putchar('0' + n / j);
-n = n - (n / j) * j;
+n = n - (n / j) *j;
 j = j / 10;
 m--;
 }
