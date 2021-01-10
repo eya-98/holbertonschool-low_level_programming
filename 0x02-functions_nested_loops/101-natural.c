@@ -9,15 +9,15 @@ int i, j, sum;
 i = 0;
 j = 0;
 sum = 0;
-while (i < 1024)
+while (i < 1021)
 {
 i = i + 3;
 sum = sum + i;
 }
-while (j < 1024)
+while (j < 1019)
 {
 j = j + 5;
-if (j % 3 != 0)
+if (!(j % 3 == 0))
 sum = sum + j;
 }
 printf("%d\n", sum);
