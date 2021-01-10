@@ -5,7 +5,7 @@
  */
 int main(void)
 {
-long int i, j, n, sum;
+unsigned long int i, j, n, sum;
 i = 1;
 j = 2;
 n = 0;
@@ -20,6 +20,6 @@ if (j % 2 != 0)
 sum = sum + j;
 n++;
 }
-printf("%ld\n", sum);
+printf("%lu\n", sum);
 return (0);
 }
