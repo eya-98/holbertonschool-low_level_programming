@@ -10,7 +10,7 @@ unsigned long int i, j, n;
 i = 1;
 j = 2;
 n = 0;
-while (n < 96)
+while (n < 48)
 {
 printf("%lu, ", i);
 printf("%lu, ", j);
