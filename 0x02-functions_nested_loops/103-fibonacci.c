@@ -5,20 +5,18 @@
  */
 int main(void)
 {
-unsigned long int i, j, n, sum;
-i = 1;
-j = 2;
-n = 0;
+unsigned long int i, j, sum;
+i = 0;
+j = 1;
 sum = 0;
-while (i <= 4000000 && j <= 4000000)
+while (i < 4000000 && j < 4000000)
 {
 i = i + j;
 j = i + j;
-if (i % 2 != 0)
+if (i % 2 == 0)
 sum = sum + i;
-if (j % 2 != 0)
+if (j % 2 == 0)
 sum = sum + j;
-n++;
 }
 printf("%lu\n", sum);
 return (0);
