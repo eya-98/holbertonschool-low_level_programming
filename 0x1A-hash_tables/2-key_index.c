@@ -5,8 +5,10 @@
  *@size: size of the array of hashtable
  *Return: the index
  */
-unsigned long int key_index(const unsigned char *key, unsigned long int size);
+unsigned long int key_index(const unsigned char *key, unsigned long int size)
 {
+unsigned long int h;
 h = hash_djb2(key);
 h = h % size;
 return (h);
+}
