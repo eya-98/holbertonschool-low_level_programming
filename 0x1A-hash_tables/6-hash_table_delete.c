@@ -9,7 +9,7 @@ unsigned long int i;
 hash_node_t *n;
 for (i = 0; i < ht->size; i++)
 {
-while (ht->array[i] != NULL)
+while (ht->array[i])
 {
 n = ht->array[i]->next;
 free(ht->array[i]->key);
