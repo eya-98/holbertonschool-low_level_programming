@@ -11,10 +11,11 @@ for (i = 0; i < ht->size; i++)
 {
 while (ht->array[i])
 {
-n = ht->array[i]->next;
-free(ht->array[i]->key);
-free(ht->array[i]->value);
-free(ht->array[i]);
+n = ht->array[i];
+ht->array[i] = ht->array[i]->next;
+free(n->key);
+free(n->value);
+free(n);
 ht->array[i] = n;
 }
 }
