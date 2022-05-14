@@ -1,5 +1,2 @@
-<<<<<<< HEAD
-details 
-=======
-# Printf Function
->>>>>>> c120d8c37f60ecf43bfefb842ee4b381bfb110f7
+# Low-Level Programming - Data Structures, Algorithms, Linux/Unix System Programming
+This repository contains programs developped for the low-level programming and algorithm track at Holberton School. In these projects, we worked on data structures, algorithms, and other low-level programming concepts using the C language.
